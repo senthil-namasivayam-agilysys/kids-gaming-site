@@ -1,0 +1,31 @@
+{
+  "siteTitle": "FunZone: Play & Learn!",
+  "tagline": "The coolest gaming site for kids aged 10-15!",
+  "countdownTarget": "2025-12-31T23:59:59Z",
+  "games": [
+    {
+      "id": 1,
+      "name": "Math Quest",
+      "description": "Solve math puzzles and advance through levels!",
+      "thumb": "assets/images/math-quest.png",
+      "difficulty": "Easy",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "name": "Word Wizard",
+      "description": "Test your vocabulary and spelling skills.",
+      "thumb": "assets/images/word-wizard.png",
+      "difficulty": "Medium",
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "name": "Memory Match",
+      "description": "Find all the matching pairs before time runs out!",
+      "thumb": "assets/images/memory-match.png",
+      "difficulty": "Hard",
+      "url": "#"
+    }
+  ]
+}

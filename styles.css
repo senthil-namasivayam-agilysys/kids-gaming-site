@@ -1,0 +1,148 @@
+:root {
+  --primary: #FFDF00;
+  --secondary: #004040;
+  --accent: #FF4E50;
+  --background: #FFFBEA;
+  --text: #222;
+  --font: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  border-bottom: 4px solid var(--accent);
+}
+
+header img {
+  height: 80px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#hero {
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+}
+
+#hero h1 {
+  color: var(--secondary);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#hero .slogan {
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+#games-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+}
+
+.game-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 1.2rem;
+  text-align: center;
+  border: 2px solid var(--primary);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.game-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  border-color: var(--accent);
+}
+
+.game-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.game-card h2 {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.game-card .difficulty {
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.game-card .description {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.game-card a {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: var(--secondary);
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.game-card a:hover {
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  color: var(--primary);
+}
+
+footer {
+  background: var(--secondary);
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0 1rem 0;
+  border-top: 4px solid var(--primary);
+  font-size: 1rem;
+}
+
+footer a {
+  color: var(--primary);
+  margin: 0 0.5rem;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  #games-list {
+    grid-template-columns: 1fr;
+  }
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* TODO: student exercise: Add focus states and animations for accessibility */
